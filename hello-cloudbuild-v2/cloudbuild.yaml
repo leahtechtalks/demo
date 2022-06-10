@@ -25,8 +25,8 @@ steps:
       - docker
       - image
       - build
-      - -t
-      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/demo/demo:$COMMIT_SHA,
+      - --tag
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/demo/demo:$COMMIT_SHA
       - .
 
   - id: kubeval
